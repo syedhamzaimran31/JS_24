@@ -6,7 +6,7 @@ const newArray = myArray.map((item) => item + 10);
 
 //map will store new values from callback, after iterating callback on each element
 const myArray_3 = myArray.map((item) => item % 2 == 0);
-console.log(myArray_3)
+// console.log(myArray_3)
 
 
 //filter is used for checking and returns true values,
@@ -14,3 +14,15 @@ console.log(myArray_3)
 const myArray_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 const newArray_2 = myArray_2.filter((item) => item + 10);
 // console.log(newArray_2)
+
+// Chaining in javascript
+const newArray_3 = myArray
+    .filter((item) => item % 2 !== 0)
+    .map((item) => item + 3)
+// console.log(newArray_3);
+
+const newArray_4 = myArray
+    .filter((item) => item == 5)
+    .map((item) => item + 5)
+console.log(newArray_4);
+
